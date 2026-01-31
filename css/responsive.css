@@ -1,0 +1,171 @@
+/* Responsive Design - Additional breakpoints and adjustments */
+
+/* Tablet Landscape & Desktop */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  h1 {
+    font-size: var(--font-size-4xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+/* Tablet Portrait */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  h1 {
+    font-size: var(--font-size-4xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-3xl);
+  }
+
+  h3 {
+    font-size: var(--font-size-2xl);
+  }
+
+  section {
+    padding: var(--space-2xl) 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-2xl);
+  }
+
+  h3 {
+    font-size: var(--font-size-xl);
+  }
+
+  h4 {
+    font-size: var(--font-size-lg);
+  }
+
+  h5 {
+    font-size: var(--font-size-base);
+  }
+
+  section {
+    padding: var(--space-xl) 0;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn--large {
+    padding: 0.875rem 1.5rem;
+    font-size: var(--font-size-base);
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 374px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  h1 {
+    font-size: var(--font-size-2xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-xl);
+  }
+}
+
+/* Utility: Hide on Mobile */
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+/* Utility: Hide on Desktop */
+@media (min-width: 768px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+
+/* Utility: Show only on Mobile */
+.show-mobile {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .show-mobile {
+    display: block !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .nav,
+  .footer,
+  .btn,
+  .download-app {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .btn--primary {
+    border: 3px solid var(--color-white);
+  }
+
+  .btn--secondary {
+    border-width: 3px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,54 @@
+/* Trusted Brands Section */
+.trusted-brands {
+  padding: var(--space-2xl) 0;
+  background-color: var(--color-white);
+}
+
+.trusted-brands__label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xl);
+}
+
+.trusted-brands__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--space-xl);
+  align-items: center;
+  justify-items: center;
+}
+
+.trusted-brands__logo {
+  max-width: 120px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all var(--transition-base);
+}
+
+.trusted-brands__logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Mobile Layout */
+@media (max-width: 1023px) {
+  .trusted-brands__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+@media (max-width: 767px) {
+  .trusted-brands__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  .trusted-brands__logo {
+    max-width: 100px;
+  }
+}
