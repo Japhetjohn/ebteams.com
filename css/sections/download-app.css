@@ -2,12 +2,14 @@
 .download-app {
   padding: var(--space-3xl) 0;
   background-color: var(--color-primary-blue);
-  text-align: center;
+  overflow: hidden;
 }
 
 .download-app__content {
-  max-width: 800px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
 }
 
 .download-app__text h2 {
@@ -26,30 +28,33 @@
 .download-app__buttons {
   display: flex;
   gap: var(--space-md);
-  justify-content: center;
   flex-wrap: wrap;
 }
 
 .download-app__button {
-  background-color: var(--color-white);
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--radius-sm);
+  display: inline-block;
   transition: all var(--transition-base);
-  box-shadow: var(--shadow-sm);
 }
 
 .download-app__button:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
 }
 
 .download-app__button img {
-  height: 20px;
+  height: 48px;
   width: auto;
 }
 
 .download-app__image {
-  display: none;
+  display: block;
+  text-align: center;
+}
+
+.download-app__image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
 }
 
 /* Mobile Layout */

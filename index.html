@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="EBteam - Your Global Application Without the Complexity. Simplifying visa, immigration, business setup, and payments for global expansion.">
+  <meta name="description"
+    content="EBteam - Your Global Application Without the Complexity. Simplifying visa, immigration, business setup, and payments for global expansion.">
   <title>EBteam - Your Global Application Without the Complexity</title>
 
   <!-- Favicon -->
@@ -26,9 +28,11 @@
   <link rel="stylesheet" href="css/sections/testimonials.css">
   <link rel="stylesheet" href="css/sections/blog.css">
   <link rel="stylesheet" href="css/sections/download-app.css">
+  <link rel="stylesheet" href="css/sections/features-overview.css">
   <link rel="stylesheet" href="css/sections/footer.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
   <!-- Navigation -->
   <header class="header">
@@ -45,13 +49,16 @@
 
       <ul class="nav__menu">
         <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-        <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
-        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        <li class="nav__item"><a href="#products" class="nav__link">Products</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
+        <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
       </ul>
 
-      <button class="btn btn--primary nav__cta">Get Started</button>
+      <div class="nav__user-actions">
+        <a href="#login" class="nav__login-btn">Log In</a>
+        <button class="btn btn--primary nav__cta">Get Started</button>
+      </div>
     </nav>
   </header>
 
@@ -59,22 +66,65 @@
   <main class="main">
     <!-- Hero Section -->
     <section id="hero" class="hero">
-      <div class="container">
+      <div class="container container--hero">
         <div class="hero__content">
           <div class="hero__text">
-            <h1 class="hero__title">Your Global Application Without the Complexity</h1>
-            <p class="hero__description">We streamline visa applications, business setups, payments, and documentation—so you can focus on what truly matters: building your future</p>
-            <button class="btn btn--primary btn--large">Get Started</button>
+            <div class="hero__badge-container">
+              <div class="hero__badge-wrapper">
+                <div class="hero__expression">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <span class="hero__tag">
+                  <span class="hero__sparkle">✨</span>
+                  Access endless possibilities
+                </span>
+              </div>
+            </div>
+            <h1 class="hero__title">Your Global Ambitions Without the Complexity.</h1>
+            <p class="hero__description">From securing visas and setting up US businesses to seamless international
+              payments—EBteam provides the tools and expertise to help you thrive across borders.</p>
+            <div class="hero__cta-group">
+              <button class="btn btn--primary btn--large">Get Started Now</button>
+              <a href="#assessment" class="hero__secondary-cta">Free Assessment &rarr;</a>
+            </div>
           </div>
 
+          <div class="hero__divider"></div>
+
           <div class="hero__images">
-            <div class="hero__image-grid">
-              <img src="assets/images/Hero Visa.png" alt="Visa Application" class="hero__img">
-              <img src="assets/images/Hero Immigration.png" alt="Immigration Services" class="hero__img">
-              <img src="assets/images/Hero Application Progress.png" alt="Application Progress Tracking" class="hero__img">
-              <img src="assets/images/Hero Payments.png" alt="Payments" class="hero__img">
-              <img src="assets/images/Hero Contract Signing.png" alt="Contract Signing" class="hero__img">
-              <img src="assets/images/Hero Business Setup.png" alt="Business Setup" class="hero__img">
+            <div class="hero__grid-layout">
+              <div class="hero__col hero__col--left">
+                <div class="hero__card hero__card--checklist">
+                  <div class="hero__checklist-header">
+                    <img src="assets/icons/Tick.svg" alt="" class="hero__checklist-icon">
+                    <span>Company Formation & Filing</span>
+                  </div>
+                  <ul class="hero__checklist">
+                    <li><img src="assets/icons/Tick.svg" alt=""> EIN (Tax ID number)</li>
+                    <li><img src="assets/icons/Tick.svg" alt=""> U.S Business Address</li>
+                    <li><img src="assets/icons/Tick.svg" alt=""> U.S Phone Number</li>
+                    <li><img src="assets/icons/Tick.svg" alt=""> Banking Account</li>
+                    <li><img src="assets/icons/Tick.svg" alt=""> Operating Agreement</li>
+                  </ul>
+                  <button class="btn btn--purple btn--sm btn--full">Get Started</button>
+                </div>
+                <div class="hero__card hero__card--person-orange">
+                  <img src="assets/images/Sarah.png" alt="Happy Customer">
+                </div>
+              </div>
+              <div class="hero__col hero__col--right">
+                <div class="hero__card hero__card--office">
+                  <img src="assets/images/Hero Contract Signing.png" alt="Office Work">
+                </div>
+                <div class="hero__card hero__card--app-progress">
+                  <img src="assets/images/Hero Application Progress.png" alt="Application Progress">
+                </div>
+                <div class="hero__card hero__card--traveler">
+                  <img src="assets/images/Hero Immigration.png" alt="Traveler">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -82,39 +132,81 @@
     </section>
 
     <!-- Trusted by Section -->
-    <section id="trusted-brands" class="trusted-brands section--sm">
+    <section id="trusted-brands" class="trusted-brands">
       <div class="container">
-        <p class="trusted-brands__label text-center text-gray">Trusted by global companies</p>
+        <p class="trusted-brands__label">Trusted by 1,000+ employees of</p>
         <div class="trusted-brands__grid">
-          <img src="assets/logos/brands/Google.svg" alt="Google" class="trusted-brands__logo">
-          <img src="assets/logos/brands/Mircosoft.svg" alt="Microsoft" class="trusted-brands__logo">
-          <img src="assets/logos/brands/Amazon.svg" alt="Amazon" class="trusted-brands__logo">
-          <img src="assets/logos/brands/LinkedIn.svg" alt="LinkedIn" class="trusted-brands__logo">
-          <img src="assets/logos/brands/Oracle.svg" alt="Oracle" class="trusted-brands__logo">
-          <img src="assets/logos/brands/Walmart.svg" alt="Walmart" class="trusted-brands__logo">
+          <div class="trusted-brands__card">
+            <img src="assets/logos/brands/Google.svg" alt="Google" class="trusted-brands__logo">
+          </div>
+          <div class="trusted-brands__card">
+            <img src="assets/logos/brands/LinkedIn.svg" alt="LinkedIn" class="trusted-brands__logo">
+          </div>
+          <div class="trusted-brands__card">
+            <img src="assets/logos/brands/Walmart.svg" alt="Walmart" class="trusted-brands__logo">
+          </div>
+          <div class="trusted-brands__card">
+            <img src="assets/logos/brands/Amazon.svg" alt="Amazon" class="trusted-brands__logo">
+          </div>
+          <div class="trusted-brands__card">
+            <img src="assets/logos/brands/Mircosoft.svg" alt="Microsoft" class="trusted-brands__logo">
+          </div>
+          <div class="trusted-brands__card">
+            <img src="assets/logos/brands/Oracle.svg" alt="Oracle" class="trusted-brands__logo">
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Statistics Section -->
-    <section id="statistics" class="statistics">
+    <!-- Features Overview Section -->
+    <section id="features-overview" class="features-overview">
       <div class="container">
-        <div class="statistics__grid">
-          <div class="statistics__card">
-            <img src="assets/addons/Trusted by Sttudents.svg" alt="Students Badge" class="statistics__badge">
-            <div class="statistics__number">15,000+</div>
-            <div class="statistics__label">Students</div>
+        <div class="features-overview__badges">
+          <div class="app-badge">
+            <img src="assets/icons/Appstore.svg" alt="App Store" class="app-badge__icon">
+            <div class="app-badge__info">
+              <span class="app-badge__rating">4.8 ★ on Appstore</span>
+            </div>
+          </div>
+          <div class="app-badge">
+            <img src="assets/icons/Playstore.svg" alt="Playstore" class="app-badge__icon">
+            <div class="app-badge__info">
+              <span class="app-badge__rating">4.8 ★ on Playstore</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="features-overview__header">
+          <h2>Seamless visas, US business setup, and cross-border payments—all in one secure platform designed for your
+            global ambition.<img src="assets/icons/Arrow.svg" alt="" class="hero__squiggle"></h2>
+        </div>
+
+        <div class="features-overview__grid">
+          <div class="feature-card">
+            <div class="feature-card__icon-container">
+              <img src="assets/icons/Trust-First Approach.svg" alt="" class="feature-card__icon">
+            </div>
+            <h3 class="feature-card__title">Trust-First Approach</h3>
+            <p class="feature-card__description">We strip away the ambiguity of international processes, providing
+              verified paths and honest guidance you can actually rely on.</p>
           </div>
 
-          <div class="statistics__card">
-            <img src="assets/addons/Trusted by Entreprenuers.svg" alt="Entrepreneurs Badge" class="statistics__badge">
-            <div class="statistics__number">5,000+</div>
-            <div class="statistics__label">Enterprises</div>
+          <div class="feature-card">
+            <div class="feature-card__icon-container">
+              <img src="assets/icons/Integrated Ecosystem.svg" alt="" class="feature-card__icon">
+            </div>
+            <h3 class="feature-card__title">Integrated Ecosystem</h3>
+            <p class="feature-card__description">Why juggle five different platforms? We handle your immigration,
+              business formation, and global payments all in one place.</p>
           </div>
 
-          <div class="statistics__card">
-            <div class="statistics__number">50+</div>
-            <div class="statistics__label">Countries</div>
+          <div class="feature-card">
+            <div class="feature-card__icon-container">
+              <img src="assets/icons/People-Centered Support.svg" alt="" class="feature-card__icon">
+            </div>
+            <h3 class="feature-card__title">People-Centered Support</h3>
+            <p class="feature-card__description">Behind our technology is a team of experts dedicated to your success,
+              ensuring you're never just a ticket number in a system.</p>
           </div>
         </div>
       </div>
@@ -125,165 +217,143 @@
       <div class="container">
         <div class="services-overview__header">
           <h2 class="text-center">Everything You Need to Go Global — in One Place</h2>
-          <p class="text-center text-gray">Your trusted pathway to global mobility, business growth, and financial freedom</p>
-        </div>
-
-        <div class="services-overview__card">
-          <div class="services-overview__card-content">
-            <h3>Launch your business in United States.</h3>
-            <p>From business setup to compliance—fully managed for you in every supported state</p>
-            <button class="btn btn--secondary">Learn More</button>
-          </div>
-          <div class="services-overview__card-image">
-            <img src="assets/images/US Business Setup.png" alt="US Business Setup">
-          </div>
+          <p class="text-center text-gray">Abandon slow, effortless solutions and choose EBteam automation. For the most
+            trusted platform, designed for your global ambitions.</p>
         </div>
       </div>
     </section>
 
     <!-- Visa & Immigration Section -->
-    <section id="visa-immigration" class="service-section">
+    <section id="visa-immigration" class="service-section service-section--reverse">
       <div class="container">
         <div class="service-section__content">
-          <div class="service-section__image">
-            <img src="assets/images/Visa & Immigration.png" alt="Visa & Immigration Services">
-          </div>
-
           <div class="service-section__text">
-            <h2>Visa & Immigration</h2>
-            <p>Navigate complex immigration processes with confidence. Whether it's a student visa, work permit, or permanent residency, we simplify every step</p>
+            <span class="badge badge--visa">VISA & IMMIGRATION</span>
+            <h2>Your trusted pathway to global mobility.</h2>
+            <p>Simplify your visa application process with expert guidance and real-time tracking.</p>
 
             <ul class="service-section__features">
               <li class="service-section__feature">
                 <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>Step-by-step visa application guidance</span>
+                <span>Study Visas</span>
               </li>
               <li class="service-section__feature">
                 <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>Document checklist & reviews</span>
+                <span>Work Permits</span>
               </li>
               <li class="service-section__feature">
                 <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>Real-time status tracking</span>
-              </li>
-              <li class="service-section__feature">
-                <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>Expert immigration support</span>
+                <span>PR Applications</span>
               </li>
             </ul>
 
-            <button class="btn btn--primary">Apply for Visa</button>
+            <button class="btn btn--primary">Get Started</button>
+          </div>
+
+          <div class="service-section__image">
+            <img src="assets/images/Visa & Immigration.png" alt="Visa & Immigration Services">
           </div>
         </div>
       </div>
     </section>
 
     <!-- US Business Setup Section -->
-    <section id="business-setup" class="service-section service-section--reverse">
+    <section id="business-setup" class="service-section">
       <div class="container">
         <div class="service-section__content">
+          <div class="service-section__image">
+            <img src="assets/images/US Business Setup.png" alt="US Business Setup">
+          </div>
+
           <div class="service-section__text">
-            <h2>US Business Setup</h2>
-            <p>Launch and scale your business in the United States with ease. From incorporation to compliance, we handle the complexity</p>
+            <span class="badge badge--business">BUSINESS</span>
+            <h2>Launch any business in the United States.</h2>
+            <p>From business setup to compliance—fully managed for you in every supported state</p>
 
             <ul class="service-section__features">
               <li class="service-section__feature">
                 <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>LLC, C-Corp, or S-Corp formation</span>
+                <span>EIN Registration</span>
               </li>
               <li class="service-section__feature">
                 <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>EIN registration & tax setup</span>
+                <span>Registered Agent</span>
               </li>
               <li class="service-section__feature">
                 <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>Virtual office & mail forwarding</span>
-              </li>
-              <li class="service-section__feature">
-                <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>Ongoing compliance support</span>
+                <span>Operating Agreement</span>
               </li>
             </ul>
 
-            <button class="btn btn--primary">Start Your Business</button>
-          </div>
-
-          <div class="service-section__image">
-            <img src="assets/images/US Business Setup.png" alt="US Business Setup">
+            <button class="btn btn--primary">Get Started</button>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Banking & Bills Payments Section -->
-    <section id="banking-payments" class="service-section">
+    <section id="banking-payments" class="service-section service-section--reverse">
       <div class="container">
         <div class="service-section__content">
-          <div class="service-section__image">
-            <img src="assets/images/Banking & Bills Payments.png" alt="Banking & Bills Payments">
-          </div>
-
           <div class="service-section__text">
-            <h2>Banking & Bills Payments</h2>
-            <p>Manage your finances seamlessly with our integrated banking and payment solutions designed for global operations</p>
+            <span class="badge badge--finance">BANKING & BILLS</span>
+            <h2>Your everyday banking, made effortless.</h2>
+            <p>Open a global business account and manage payments seamlessly across borders.</p>
 
             <ul class="service-section__features">
               <li class="service-section__feature">
                 <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>Multi-currency business accounts</span>
+                <span>Multi-currency Account</span>
               </li>
               <li class="service-section__feature">
                 <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>International money transfers</span>
+                <span>Bill Payments</span>
               </li>
               <li class="service-section__feature">
                 <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>Automated bill payments</span>
-              </li>
-              <li class="service-section__feature">
-                <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>Expense tracking & reporting</span>
+                <span>Real-time Alerts</span>
               </li>
             </ul>
 
-            <button class="btn btn--primary">Open Account</button>
+            <button class="btn btn--primary">Get Started</button>
+          </div>
+
+          <div class="service-section__image">
+            <img src="assets/images/Banking & Bills Payments.png" alt="Banking & Bills Payments">
           </div>
         </div>
       </div>
     </section>
 
     <!-- Educational Payments Section -->
-    <section id="educational-payments" class="service-section service-section--reverse">
+    <section id="educational-payments" class="service-section">
       <div class="container">
         <div class="service-section__content">
+          <div class="service-section__image">
+            <img src="assets/images/Educational Payments.png" alt="Educational Payments">
+          </div>
+
           <div class="service-section__text">
-            <h2>Educational Payments</h2>
-            <p>Pay tuition, accommodation, and other educational expenses directly and securely. Built specifically for international students</p>
+            <span class="badge badge--education">EDUCATION</span>
+            <h2>Pay school fees abroad without stress.</h2>
+            <p>Securely pay for tuition, accommodation, and other education-related expenses from anywhere.</p>
 
             <ul class="service-section__features">
               <li class="service-section__feature">
                 <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>Direct university payments</span>
+                <span>Tuition Fees</span>
               </li>
               <li class="service-section__feature">
                 <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>Competitive exchange rates</span>
+                <span>Accommodation Payments</span>
               </li>
               <li class="service-section__feature">
                 <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>Payment receipts & confirmation</span>
-              </li>
-              <li class="service-section__feature">
-                <img src="assets/icons/Tick.svg" alt="Check" class="service-section__icon">
-                <span>24/7 student support</span>
+                <span>SEVIS Fee</span>
               </li>
             </ul>
 
-            <button class="btn btn--primary">Make Payment</button>
-          </div>
-
-          <div class="service-section__image">
-            <img src="assets/images/Educational Payments.png" alt="Educational Payments">
+            <button class="btn btn--primary">Get Started</button>
           </div>
         </div>
       </div>
@@ -293,63 +363,49 @@
     <section id="features" class="features">
       <div class="container">
         <div class="features__header">
-          <h2 class="text-center text-white">Built for Trust, Speed and Scale</h2>
-          <p class="text-center text-white">Every feature designed to make your global journey seamless, secure, and stress-free</p>
+          <h2 class="text-center text-white">Built for Trust, Speed, and Scale</h2>
+          <p class="text-center text-white">Every feature designed to make your global journey seamless, secure, and
+            stress-free</p>
         </div>
 
         <div class="features__grid">
           <div class="features__card">
             <img src="assets/icons/Trust-First Approach.svg" alt="Trust-First Approach" class="features__icon">
             <h3 class="features__title text-white">Trust-First Approach</h3>
-            <p class="features__description text-white">Your trust is our priority. We operate with full transparency and integrity</p>
+            <p class="features__description text-white">Your trust is our priority. We operate with full transparency
+              and integrity.</p>
           </div>
 
           <div class="features__card">
             <img src="assets/icons/Verified Processes.svg" alt="Verified Processes" class="features__icon">
             <h3 class="features__title text-white">Verified Processes</h3>
-            <p class="features__description text-white">Every step is backed by verified, compliant, and reliable processes</p>
+            <p class="features__description text-white">Every step is backed by verified, compliant, and reliable
+              processes.</p>
           </div>
 
           <div class="features__card">
             <img src="assets/icons/End‑to‑End Tracking.svg" alt="End-to-End Tracking" class="features__icon">
             <h3 class="features__title text-white">End‑to‑End Tracking</h3>
-            <p class="features__description text-white">Track your applications, payments, and documents in real-time</p>
+            <p class="features__description text-white">Track your applications, payments, and documents in real-time.
+            </p>
           </div>
 
           <div class="features__card">
             <img src="assets/icons/Integrated Ecosystem.svg" alt="Integrated Ecosystem" class="features__icon">
             <h3 class="features__title text-white">Integrated Ecosystem</h3>
-            <p class="features__description text-white">All services connected in one seamless platform</p>
-          </div>
-
-          <div class="features__card">
-            <img src="assets/icons/Multi‑Service Wallet.svg" alt="Multi-Service Wallet" class="features__icon">
-            <h3 class="features__title text-white">Multi‑Service Wallet</h3>
-            <p class="features__description text-white">One wallet for all your payments, bills, and transactions</p>
-          </div>
-
-          <div class="features__card">
-            <img src="assets/icons/Smart Notifications.svg" alt="Smart Notifications" class="features__icon">
-            <h3 class="features__title text-white">Smart Notifications</h3>
-            <p class="features__description text-white">Get timely updates on every critical step of your journey</p>
+            <p class="features__description text-white">All services connected in one seamless platform.</p>
           </div>
 
           <div class="features__card">
             <img src="assets/icons/Secure by Design.svg" alt="Secure by Design" class="features__icon">
             <h3 class="features__title text-white">Secure by Design</h3>
-            <p class="features__description text-white">Bank-level encryption and security for all your data</p>
-          </div>
-
-          <div class="features__card">
-            <img src="assets/icons/Live Human Support.svg" alt="Live Human Support" class="features__icon">
-            <h3 class="features__title text-white">Live Human Support</h3>
-            <p class="features__description text-white">Real people, ready to help whenever you need assistance</p>
+            <p class="features__description text-white">Bank-level encryption and security for all your data.</p>
           </div>
 
           <div class="features__card">
             <img src="assets/icons/People-Centered Support.svg" alt="People-Centered Support" class="features__icon">
             <h3 class="features__title text-white">People-Centered Support</h3>
-            <p class="features__description text-white">We put people first, not processes or profits</p>
+            <p class="features__description text-white">Real people, ready to help whenever you need assistance.</p>
           </div>
         </div>
       </div>
@@ -359,7 +415,7 @@
     <section id="global-reach" class="global-reach">
       <div class="container">
         <div class="global-reach__header">
-          <h2 class="text-center">Seamless Access Across Borders</h2>
+          <h2 class="text-center">Serving Ambition Across Borders</h2>
           <p class="text-center text-gray">Operating in over 50 countries, helping you expand globally</p>
         </div>
 
@@ -450,7 +506,8 @@
       <div class="container">
         <div class="testimonials__header">
           <h2 class="text-center">Trusted by People Building Global Future</h2>
-          <p class="text-center text-gray">Real stories from students, entrepreneurs, and businesses who trust EBteam</p>
+          <p class="text-center text-gray">Real stories from students, entrepreneurs, and businesses who trust EBteam
+          </p>
         </div>
 
         <div class="testimonials__grid">
@@ -458,7 +515,8 @@
             <div class="testimonials__rating">
               <img src="assets/addons/Rating Starts.svg" alt="5 Stars">
             </div>
-            <p class="testimonials__quote">"EBteam made my visa process so simple! I got my student visa approved in record time. The tracking feature kept me informed every step of the way."</p>
+            <p class="testimonials__quote">"EBteam made my visa process so simple! I got my student visa approved in
+              record time. The tracking feature kept me informed every step of the way."</p>
             <div class="testimonials__author">
               <img src="assets/images/Sarah.png" alt="Sarah Johnson" class="testimonials__photo">
               <div class="testimonials__info">
@@ -472,7 +530,8 @@
             <div class="testimonials__rating">
               <img src="assets/addons/Rating Starts.svg" alt="5 Stars">
             </div>
-            <p class="testimonials__quote">"As an entrepreneur, setting up my US business seemed daunting until I found EBteam. They handled everything from incorporation to compliance."</p>
+            <p class="testimonials__quote">"As an entrepreneur, setting up my US business seemed daunting until I found
+              EBteam. They handled everything from incorporation to compliance."</p>
             <div class="testimonials__author">
               <img src="assets/images/David.png" alt="David Chen" class="testimonials__photo">
               <div class="testimonials__info">
@@ -486,7 +545,8 @@
             <div class="testimonials__rating">
               <img src="assets/addons/Rating Starts.svg" alt="5 Stars">
             </div>
-            <p class="testimonials__quote">"The payment platform is a game-changer. I can pay my tuition fees directly without worrying about exchange rates or delays. Highly recommend!"</p>
+            <p class="testimonials__quote">"The payment platform is a game-changer. I can pay my tuition fees directly
+              without worrying about exchange rates or delays. Highly recommend!"</p>
             <div class="testimonials__author">
               <img src="assets/images/Kelechi.png" alt="Kelechi Okonkwo" class="testimonials__photo">
               <div class="testimonials__info">
@@ -500,7 +560,8 @@
             <div class="testimonials__rating">
               <img src="assets/addons/Rating Starts.svg" alt="5 Stars">
             </div>
-            <p class="testimonials__quote">"EBteam's support team is exceptional. They guided me through every document requirement and answered all my questions with patience and expertise."</p>
+            <p class="testimonials__quote">"EBteam's support team is exceptional. They guided me through every document
+              requirement and answered all my questions with patience and expertise."</p>
             <div class="testimonials__author">
               <img src="assets/images/Ayango.png" alt="Ayango Martinez" class="testimonials__photo">
               <div class="testimonials__info">
@@ -514,7 +575,8 @@
             <div class="testimonials__rating">
               <img src="assets/addons/Rating Starts.svg" alt="5 Stars">
             </div>
-            <p class="testimonials__quote">"I've used several immigration services, but none compare to EBteam. The platform is intuitive, and the team truly cares about your success."</p>
+            <p class="testimonials__quote">"I've used several immigration services, but none compare to EBteam. The
+              platform is intuitive, and the team truly cares about your success."</p>
             <div class="testimonials__author">
               <img src="assets/images/Nwongo.png" alt="Nwongo Patel" class="testimonials__photo">
               <div class="testimonials__info">
@@ -528,7 +590,8 @@
             <div class="testimonials__rating">
               <img src="assets/addons/Rating Starts.svg" alt="5 Stars">
             </div>
-            <p class="testimonials__quote">"The multi-service wallet is brilliant! I can manage all my payments, from tuition to bills, in one place. It's saved me so much time and stress."</p>
+            <p class="testimonials__quote">"The multi-service wallet is brilliant! I can manage all my payments, from
+              tuition to bills, in one place. It's saved me so much time and stress."</p>
             <div class="testimonials__author">
               <img src="assets/images/Donald.png" alt="Donald Kim" class="testimonials__photo">
               <div class="testimonials__info">
@@ -557,7 +620,8 @@
             </div>
             <div class="blog__content">
               <h3 class="blog__title">Top 10 Tips for a Successful Visa Application</h3>
-              <p class="blog__excerpt">Navigate the visa application process with confidence using these proven strategies from immigration experts...</p>
+              <p class="blog__excerpt">Navigate the visa application process with confidence using these proven
+                strategies from immigration experts...</p>
               <a href="#" class="blog__link">
                 Read More
                 <img src="assets/icons/Arrow.svg" alt="Arrow" class="blog__arrow">
@@ -572,7 +636,8 @@
             </div>
             <div class="blog__content">
               <h3 class="blog__title">How to Choose the Right Business Structure in the US</h3>
-              <p class="blog__excerpt">LLC vs C-Corp vs S-Corp: Understanding the differences and choosing the best structure for your business...</p>
+              <p class="blog__excerpt">LLC vs C-Corp vs S-Corp: Understanding the differences and choosing the best
+                structure for your business...</p>
               <a href="#" class="blog__link">
                 Read More
                 <img src="assets/icons/Arrow.svg" alt="Arrow" class="blog__arrow">
@@ -587,7 +652,8 @@
             </div>
             <div class="blog__content">
               <h3 class="blog__title">Managing International Payments: A Complete Guide</h3>
-              <p class="blog__excerpt">Learn how to optimize your international payments, reduce fees, and streamline cross-border transactions...</p>
+              <p class="blog__excerpt">Learn how to optimize your international payments, reduce fees, and streamline
+                cross-border transactions...</p>
               <a href="#" class="blog__link">
                 Read More
                 <img src="assets/icons/Arrow.svg" alt="Arrow" class="blog__arrow">
@@ -630,7 +696,8 @@
       <div class="footer__content">
         <div class="footer__column footer__column--brand">
           <img src="assets/logos/EBteam Logo.svg" alt="EBteam Logo" class="footer__logo">
-          <p class="footer__description">Simplifying global mobility, business setup, and payments for students, entrepreneurs, and businesses worldwide.</p>
+          <p class="footer__description">Simplifying global mobility, business setup, and payments for students,
+            entrepreneurs, and businesses worldwide.</p>
 
           <div class="footer__social">
             <a href="#" class="footer__social-link" aria-label="Facebook">
@@ -716,4 +783,5 @@
   <!-- JavaScript -->
   <script src="js/main.js"></script>
 </body>
+
 </html>

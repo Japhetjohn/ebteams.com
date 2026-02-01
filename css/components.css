@@ -6,15 +6,15 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-xs);
-  padding: 0.75rem 1.5rem;
+  padding: 0.6rem 1.25rem;
   font-family: var(--font-body);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-medium);
-  line-height: 1.5;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-semibold);
+  line-height: 1.4;
   text-align: center;
   text-decoration: none;
   border-radius: var(--radius-sm);
-  border: 2px solid transparent;
+  border: 1.5px solid transparent;
   cursor: pointer;
   transition: all var(--transition-base);
   white-space: nowrap;
@@ -105,10 +105,13 @@
   align-items: center;
   justify-content: center;
   padding: 0.25rem 0.75rem;
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-medium);
+  font-size: 0.7rem;
+  font-weight: var(--font-bold);
   border-radius: var(--radius-sm);
   white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-sm);
 }
 
 .badge--primary {
@@ -116,19 +119,24 @@
   color: var(--color-primary-blue);
 }
 
-.badge--success {
-  background-color: var(--color-success-light);
-  color: var(--color-success);
+.badge--visa {
+  background-color: #FFF7ED;
+  color: #EA580C;
 }
 
-.badge--warning {
-  background-color: var(--color-accent-yellow-pale);
-  color: var(--color-accent-yellow-dark);
+.badge--business {
+  background-color: #F5F3FF;
+  color: #7C3AED;
 }
 
-.badge--error {
-  background-color: var(--color-error-light);
-  color: var(--color-error);
+.badge--finance {
+  background-color: #FFFBEB;
+  color: #D97706;
+}
+
+.badge--education {
+  background-color: #F0FDF4;
+  color: #16A34A;
 }
 
 /* Input Fields */
