@@ -18,10 +18,36 @@
   line-height: 1.2;
 }
 
-.community__subtitle {
+.community__description {
   font-size: var(--font-size-lg);
   color: var(--color-gray-medium);
   margin-bottom: var(--space-xl);
+  line-height: 1.6;
+}
+
+.community__footer-text {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-dark);
+  margin-bottom: var(--space-lg);
+  font-weight: 500;
+}
+
+.btn--black {
+  background-color: black;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 8px;
+  /* Standard borderRadius from other buttons */
+  text-decoration: none;
+  font-weight: var(--font-bold);
+  display: inline-block;
+  transition: transform var(--transition-base);
+  border: none;
+  cursor: pointer;
+}
+
+.btn--black:hover {
+  transform: translateY(-2px);
 }
 
 .community__benefits {
