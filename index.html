@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="css/sections/community.css">
   <link rel="stylesheet" href="css/sections/testimonials.css">
   <link rel="stylesheet" href="css/sections/blog.css">
-  <link rel="stylesheet" href="css/sections/download-app.css">
+  <link rel="stylesheet" href="css/sections/cta-section.css">
   <link rel="stylesheet" href="css/sections/features-overview.css">
   <link rel="stylesheet" href="css/sections/footer.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -632,135 +632,80 @@
         </div>
       </div>
     </section>
-    <img src="assets/addons/Rating Starts.svg" alt="5 Stars">
-    </div>
-    <p class="testimonials__quote">"EBteam's support team is exceptional. They guided me through every
-      document
-      requirement and answered all my questions with patience and expertise."</p>
-    <div class="testimonials__author">
-      <img src="assets/images/Ayango.png" alt="Ayango Martinez" class="testimonials__photo">
-      <div class="testimonials__info">
-        <div class="testimonials__name">Ayango Martinez</div>
-        <div class="testimonials__role">Software Engineer, Mexico</div>
-      </div>
-    </div>
-    </div>
-
-    <div class="testimonials__card">
-      <div class="testimonials__rating">
-        <img src="assets/addons/Rating Starts.svg" alt="5 Stars">
-      </div>
-      <p class="testimonials__quote">"I've used several immigration services, but none compare to EBteam. The
-        platform is intuitive, and the team truly cares about your success."</p>
-      <div class="testimonials__author">
-        <img src="assets/images/Nwongo.png" alt="Nwongo Patel" class="testimonials__photo">
-        <div class="testimonials__info">
-          <div class="testimonials__name">Nwongo Patel</div>
-          <div class="testimonials__role">Business Analyst, India</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="testimonials__card">
-      <div class="testimonials__rating">
-        <img src="assets/addons/Rating Starts.svg" alt="5 Stars">
-      </div>
-      <p class="testimonials__quote">"The multi-service wallet is brilliant! I can manage all my payments,
-        from
-        tuition to bills, in one place. It's saved me so much time and stress."</p>
-      <div class="testimonials__author">
-        <img src="assets/images/Donald.png" alt="Donald Kim" class="testimonials__photo">
-        <div class="testimonials__info">
-          <div class="testimonials__name">Donald Kim</div>
-          <div class="testimonials__role">Startup Founder, South Korea</div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-    </section>
 
     <!-- Blog Section -->
     <section id="blog" class="blog">
       <div class="container">
         <div class="blog__header">
-          <h2>Our Latest Insights & Articles</h2>
-          <button class="btn btn--secondary">View All Articles</button>
+          <h2>Our Latest<br>Insights & Articles</h2>
+          <button class="btn btn--black">All Resources</button>
         </div>
 
         <div class="blog__grid">
-          <article class="blog__card">
-            <div class="blog__image">
-              <img src="assets/images/Blog Image.png" alt="Blog Post">
-              <span class="blog__category">Immigration</span>
-            </div>
-            <div class="blog__content">
-              <h3 class="blog__title">Top 10 Tips for a Successful Visa Application</h3>
-              <p class="blog__excerpt">Navigate the visa application process with confidence using these proven
-                strategies from immigration experts...</p>
-              <a href="#" class="blog__link">
-                Read More
-                <img src="assets/icons/Arrow.svg" alt="Arrow" class="blog__arrow">
-              </a>
-            </div>
-          </article>
-
-          <article class="blog__card">
-            <div class="blog__image">
-              <img src="assets/images/Blog Image.png" alt="Blog Post">
-              <span class="blog__category">Business</span>
-            </div>
-            <div class="blog__content">
-              <h3 class="blog__title">How to Choose the Right Business Structure in the US</h3>
-              <p class="blog__excerpt">LLC vs C-Corp vs S-Corp: Understanding the differences and choosing the best
-                structure for your business...</p>
-              <a href="#" class="blog__link">
-                Read More
-                <img src="assets/icons/Arrow.svg" alt="Arrow" class="blog__arrow">
-              </a>
+          <!-- Featured Article (Left) -->
+          <article class="blog__featured custom-bg-image">
+            <img src="assets/images/Hero Immigration.png" alt="Global Talent" class="blog__bg-img">
+            <div class="blog__overlay"></div>
+            <div class="blog__featured-content">
+              <div class="blog__meta">
+                <span class="blog__tag blog__tag--purple">Immigration</span>
+                <span class="blog__read-time text-white">12 min read</span>
+              </div>
+              <h3 class="blog__featured-title">The Future of Global Talent: Why Countries are Competing for Ambitious
+                Professionals.</h3>
+              <a href="#" class="blog__link text-white">Read More &rarr;</a>
             </div>
           </article>
 
-          <article class="blog__card">
-            <div class="blog__image">
-              <img src="assets/images/Blog Image.png" alt="Blog Post">
-              <span class="blog__category">Finance</span>
-            </div>
-            <div class="blog__content">
-              <h3 class="blog__title">Managing International Payments: A Complete Guide</h3>
-              <p class="blog__excerpt">Learn how to optimize your international payments, reduce fees, and
-                streamline
-                cross-border transactions...</p>
-              <a href="#" class="blog__link">
-                Read More
-                <img src="assets/icons/Arrow.svg" alt="Arrow" class="blog__arrow">
+          <!-- Sidebar Articles (Right) -->
+          <div class="blog__sidebar">
+            <article class="blog__side-card">
+              <div class="blog__meta">
+                <span class="blog__tag blog__tag--pink">Business Setup</span>
+                <span class="blog__read-time">12 min read</span>
+              </div>
+              <div>
+                <h4 class="blog__side-title">Top 5 Mistakes to Avoid When Opening a US Business Bank Account Remotely.
+                </h4>
+              </div>
+              <a href="#" class="blog__arrow-btn blog__arrow-btn--purple">
+                <img src="assets/icons/Arrow Right White.svg" alt="Read">
               </a>
-            </div>
-          </article>
+            </article>
+
+            <article class="blog__side-card">
+              <div class="blog__meta">
+                <span class="blog__tag blog__tag--blue">Immigration</span>
+                <span class="blog__read-time">12 min read</span>
+              </div>
+              <div>
+                <h4 class="blog__side-title">The 2026 Guide to EB2-NIW: How to Prove Your National Importance.</h4>
+              </div>
+              <a href="#" class="blog__arrow-btn blog__arrow-btn--blue">
+                <img src="assets/icons/Arrow Right White.svg" alt="Read">
+              </a>
+            </article>
+          </div>
         </div>
       </div>
     </section>
-
-    <!-- Download App CTA -->
-    <section id="download-app" class="download-app">
+    <!-- CTA Section -->
+    <section id="cta-section" class="cta-section">
       <div class="container">
-        <div class="download-app__content">
-          <div class="download-app__text">
-            <h2 class="text-white">Build, Move, and Pay — Globally.</h2>
-            <p class="text-white">Download the EBteam app and manage everything on the go</p>
-
-            <div class="download-app__buttons">
-              <a href="#" class="download-app__button">
-                <img src="assets/icons/Appstore.svg" alt="Download on App Store">
-              </a>
-              <a href="#" class="download-app__button">
-                <img src="assets/icons/Playstore.svg" alt="Get it on Google Play">
-              </a>
-            </div>
+        <div class="cta-card">
+          <div class="cta-card__content">
+            <h2>Build, Move,<br>and Pay — Globally.</h2>
+            <p>EBteam helps you unlock global opportunities through trusted visa services, business setup, international
+              payments, and a powerful global community — all in one place.</p>
+            <button class="btn btn--white">Get Started Now</button>
           </div>
 
-          <div class="download-app__image">
-            <img src="assets/images/Download App.png" alt="EBteam Mobile App">
+          <!-- Decorative Dashed Grid (Implemented via CSS usually, but providing hooks if needed) -->
+          <div class="cta-card__dots">
+            <span class="dot dot--tl"></span>
+            <span class="dot dot--tr"></span>
+            <span class="dot dot--bl"></span>
+            <span class="dot dot--br"></span>
           </div>
         </div>
       </div>
@@ -768,91 +713,83 @@
   </main>
 
   <!-- Footer -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer__content">
-        <div class="footer__column footer__column--brand">
-          <img src="assets/logos/EBteam Logo.svg" alt="EBteam Logo" class="footer__logo">
-          <p class="footer__description">Simplifying global mobility, business setup, and payments for students,
-            entrepreneurs, and businesses worldwide.</p>
-
-          <div class="footer__social">
-            <a href="#" class="footer__social-link" aria-label="Facebook">
-              <img src="assets/icons/Facebook.svg" alt="Facebook">
-            </a>
-            <a href="#" class="footer__social-link" aria-label="Twitter">
-              <img src="assets/icons/X.svg" alt="Twitter">
-            </a>
-            <a href="#" class="footer__social-link" aria-label="LinkedIn">
-              <img src="assets/icons/Linked In.svg" alt="LinkedIn">
-            </a>
-            <a href="#" class="footer__social-link" aria-label="Instagram">
-              <img src="assets/icons/Instagram.svg" alt="Instagram">
-            </a>
-          </div>
-        </div>
-
+        <!-- Quick Links -->
         <div class="footer__column">
-          <h4 class="footer__heading">Product</h4>
+          <h4 class="footer__heading">Quick Links</h4>
           <ul class="footer__links">
-            <li><a href="#" class="footer__link">Visa & Immigration</a></li>
-            <li><a href="#" class="footer__link">Business Setup</a></li>
-            <li><a href="#" class="footer__link">Banking & Payments</a></li>
-            <li><a href="#" class="footer__link">Educational Payments</a></li>
-            <li><a href="#" class="footer__link">Pricing</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__column">
-          <h4 class="footer__heading">Company</h4>
-          <ul class="footer__links">
-            <li><a href="#" class="footer__link">About Us</a></li>
-            <li><a href="#" class="footer__link">Careers</a></li>
-            <li><a href="#" class="footer__link">Press</a></li>
-            <li><a href="#" class="footer__link">Partners</a></li>
+            <li><a href="#" class="footer__link">Home</a></li>
+            <li><a href="#" class="footer__link">About</a></li>
+            <li><a href="#" class="footer__link">Insight</a></li>
             <li><a href="#" class="footer__link">Contact</a></li>
+            <li><a href="#" class="footer__link">Careers</a></li>
+            <li><a href="#" class="footer__link">FAQs</a></li>
           </ul>
         </div>
 
+        <!-- Products -->
         <div class="footer__column">
-          <h4 class="footer__heading">Resources</h4>
+          <h4 class="footer__heading">Products</h4>
           <ul class="footer__links">
-            <li><a href="#" class="footer__link">Blog</a></li>
-            <li><a href="#" class="footer__link">Help Center</a></li>
-            <li><a href="#" class="footer__link">Community</a></li>
-            <li><a href="#" class="footer__link">Guides</a></li>
-            <li><a href="#" class="footer__link">API Docs</a></li>
+            <li><a href="#" class="footer__link">Visas and Immigration</a></li>
+            <li><a href="#" class="footer__link">Banking & Bills Payment</a></li>
+            <li><a href="#" class="footer__link">US Business Setup</a></li>
+            <li><a href="#" class="footer__link">EBteam Card</a></li>
           </ul>
         </div>
 
+        <!-- Legal -->
         <div class="footer__column">
-          <h4 class="footer__heading">Support</h4>
+          <h4 class="footer__heading">Legal</h4>
           <ul class="footer__links">
-            <li><a href="#" class="footer__link">FAQ</a></li>
-            <li><a href="#" class="footer__link">Live Chat</a></li>
-            <li><a href="#" class="footer__link">Email Support</a></li>
-            <li><a href="#" class="footer__link">Phone Support</a></li>
-            <li><a href="#" class="footer__link">Status</a></li>
+            <li><a href="#" class="footer__link">Terms of Use</a></li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Disclosures</a></li>
+            <li><a href="#" class="footer__link">AML</a></li>
           </ul>
         </div>
 
-        <div class="footer__column footer__column--newsletter">
-          <h4 class="footer__heading">Stay Updated</h4>
-          <p class="footer__newsletter-text">Subscribe to our newsletter for updates and insights</p>
-          <form class="footer__newsletter-form">
-            <input type="email" placeholder="Enter your email" class="footer__input" required>
-            <button type="submit" class="btn btn--primary">Subscribe</button>
-          </form>
+        <!-- Newsletter -->
+        <div class="footer__column">
+          <h4 class="footer__heading">Newsletter</h4>
+          <div class="footer__newsletter">
+            <p class="footer__newsletter-text">Stay updated with industry insights, product updates, and exclusive tips.
+            </p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email" class="newsletter-input">
+              <button type="submit" class="newsletter-submit">
+                <img src="assets/icons/Arrow.svg" alt="Subscribe" style="filter: brightness(0) invert(1);">
+              </button>
+            </form>
+            <div class="footer__social-links">
+              <a href="#" class="footer__social-icon"><img src="assets/icons/Linked In.svg" alt="LinkedIn"></a>
+              <a href="#" class="footer__social-icon"><img src="assets/icons/Facebook.svg" alt="Facebook"></a>
+              <a href="#" class="footer__social-icon"><img src="assets/icons/Instagram.svg" alt="Instagram"></a>
+              <a href="#" class="footer__social-icon"><img src="assets/icons/X.svg" alt="X"></a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2025 EBteam. All rights reserved.</p>
-        <div class="footer__legal">
-          <a href="#" class="footer__legal-link">Privacy Policy</a>
-          <a href="#" class="footer__legal-link">Terms of Service</a>
-          <a href="#" class="footer__legal-link">Cookie Policy</a>
-        </div>
+      <div class="footer__disclaimer">
+        <p class="disclaimer-text">
+          EBteam partners with Stripe Payments Company for money transmission services and account services with funds
+          held at Safehaven Microfinance Bank, Member FDIC.<br><br>
+          <span class="bold">Disclaimer:</span> EBTeam is not a traditional law firm. While we offer select services
+          through experienced consultants, our company is independently owned and not managed by lawyers. We do not
+          provide legal advice. EBTeam is privately owned and not affiliated with any government agency. Before using
+          our services, please review our Privacy Policy, Terms of Use, and Fee Agreement carefully. Please note:
+          nothing on this website should be interpreted as legal advice. For legal advice specific to your situation,
+          consult a <span class="bold">licensed attorney.</span>
+        </p>
+      </div>
+
+      <div class="footer__bottom-bar">
+        <div class="footer__copyright">© 2026 | Ebteams Global Inc. All rights reserved.</div>
+        <div class="footer__credits">Designed and Developed by <span>Oniontabs</span></div>
       </div>
     </div>
   </footer>
