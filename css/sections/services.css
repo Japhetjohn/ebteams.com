@@ -133,6 +133,9 @@
 .service-section__features {
   list-style: none;
   margin-bottom: var(--space-xl);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md) var(--space-xl);
 }
 
 .service-section__feature {
@@ -143,15 +146,16 @@
 }
 
 .service-section__icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   flex-shrink: 0;
 }
 
 .service-section__feature span {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-medium);
   line-height: 1.5;
-  color: var(--color-gray-dark);
+  color: var(--color-black);
 }
 
 /* Mobile Layout */

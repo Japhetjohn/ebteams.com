@@ -163,3 +163,70 @@ document.addEventListener('DOMContentLoaded', () => {
 // Console welcome message
 console.log('%cWelcome to EBteam! 🌍', 'color: #2158E1; font-size: 20px; font-weight: bold;');
 console.log('%cYour Global Application Without the Complexity', 'color: #828282; font-size: 14px;');
+
+// CountUp Animation
+const animateValue = (obj, start, end, duration) => {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+
+    // Add 'k' or '%' suffix logic if needed, here we just show numbers
+    // For '1000' we might want to show '1k+' but for now keeping it simple or matching design
+
+    // Handle specific formatting for 1000 -> 1k+ or similar if desired, 
+    // but based on design usually it's just the number.
+    // Let's add simple formatting:
+    let current = Math.floor(progress * (end - start) + start);
+
+    if (end > 999) {
+      obj.innerHTML = (current / 1000).toFixed(1).replace('.0', '') + 'k+';
+    } else {
+      obj.innerHTML = current + (obj.dataset.suffix || '');
+    }
+
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    } else {
+      // Ensure final value is accurate
+      if (end > 999) {
+        obj.innerHTML = (end / 1000).toFixed(1).replace('.0', '') + 'k+';
+      } else {
+        obj.innerHTML = end + (obj.dataset.suffix || '');
+      }
+    }
+  };
+  window.requestAnimationFrame(step);
+};
+
+// Intersection Observer for Statistics
+const statsObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const target = parseInt(entry.target.getAttribute('data-target'));
+      // Check for '%' in next sibling or similar if needed, 
+      // but let's assume we modify HTML to include suffix data attribute if needed.
+      // For now, I'll update the HTML replace to include suffixes for the % case.
+
+      // Actually, looking at my HTML replace, I didn't add data-suffix.
+      // Let's just do raw numbers for now and tweak if needed.
+
+      // Wait, 98% is one of them.
+      // Let's quick-fix the HTML replace in next step if I missed suffixes, 
+      // OR handle it here.
+
+      let suffix = '';
+      const label = entry.target.nextElementSibling.textContent;
+      if (label.includes('%')) suffix = '%';
+
+      entry.target.dataset.suffix = suffix; // Store it
+
+      animateValue(entry.target, 0, target, 2000);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.statistics__number').forEach(el => {
+  statsObserver.observe(el);
+});
