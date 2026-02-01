@@ -1,7 +1,9 @@
 /* Features Section */
 .features {
-  padding: var(--space-3xl) 0;
-  background-color: var(--color-primary-blue);
+  padding: var(--space-4xl) 0;
+  background-color: #2600ff;
+  /* Exact vibrant blue from design */
+  color: var(--color-white);
 }
 
 .features__header {
@@ -11,8 +13,8 @@
 }
 
 .features__header h2 {
-  font-size: 3rem;
-  font-weight: var(--font-extrabold);
+  font-size: 3.5rem;
+  font-weight: var(--font-bold);
   margin-bottom: var(--space-md);
   letter-spacing: -0.02em;
 }
@@ -20,81 +22,141 @@
 .features__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-2xl);
+  border-top: 1px dotted rgba(255, 255, 255, 0.3);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+/* Dots on top/bottom grid lines */
+.features__grid::before,
+.features__grid::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  /* Centered on 1px border */
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.features__grid::before {
+  left: 33.333%;
+  transform: translateX(-50%);
+}
+
+.features__grid::after {
+  left: 66.666%;
+  transform: translateX(-50%);
 }
 
 .features__card {
-  padding: var(--space-xl);
+  padding: var(--space-2xl);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  border: none;
-  background: transparent;
+  align-items: center;
+  text-align: center;
+  border-right: 1px dotted rgba(255, 255, 255, 0.4);
+  position: relative;
+}
+
+/* Remove border from the last item in each row */
+.features__card:nth-child(3n) {
+  border-right: none;
+}
+
+/* Add dotted bottom border to the first 3 items (first row) */
+.features__card:nth-child(-n+3) {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+}
+
+/* Dots for the middle intersection line (bottom of first row cards) */
+/* We target the 1st and 2nd cards of the first row to place dots at their bottom-right corners */
+.features__card:nth-child(1)::after,
+.features__card:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  /* Centered on bottom border */
+  right: -5px;
+  /* Centered on right border */
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 10;
 }
 
 .features__icon {
   width: 48px;
   height: 48px;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
   margin-bottom: var(--space-lg);
-  object-fit: contain;
+  display: block;
 }
 
 .features__title {
-  font-size: var(--font-size-xl);
+  font-size: 1.25rem;
   font-weight: var(--font-bold);
   margin-bottom: var(--space-sm);
   color: var(--color-white);
 }
 
 .features__description {
-  font-size: var(--font-size-base);
-  line-height: 1.5;
-  color: var(--color-white);
-  opacity: 0.8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 /* Mobile Layout */
 @media (max-width: 1023px) {
   .features__grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-md);
+    border: none;
+  }
+
+  .features__grid::before,
+  .features__grid::after,
+  .features__card::before,
+  .features__card::after {
+    display: none;
+    /* Hide dots on mobile */
+  }
+
+  .features__card {
+    border: 1px dotted rgba(255, 255, 255, 0.3);
+    margin: -1px 0 0 -1px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
   }
 
   .features__header h2 {
-    font-size: var(--font-size-3xl);
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 767px) {
   .features {
-    padding: var(--space-2xl) 0;
+    padding: var(--space-3xl) 0;
   }
 
   .features__grid {
     grid-template-columns: 1fr;
-  }
-
-  .features__header h2 {
-    font-size: var(--font-size-2xl);
-  }
-
-  .features__header p {
-    font-size: var(--font-size-base);
+    border: none;
   }
 
   .features__card {
-    padding: var(--space-lg);
+    border: none;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+    padding: var(--space-xl) 0;
   }
 
-  .features__title {
-    font-size: var(--font-size-lg);
+  .features__card:last-child {
+    border-bottom: none;
   }
 
-  .features__description {
-    font-size: var(--font-size-sm);
+  .features__header h2 {
+    font-size: 2rem;
   }
 }

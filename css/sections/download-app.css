@@ -1,98 +1,165 @@
 /* Download App Section */
 .download-app {
-  padding: var(--space-3xl) 0;
-  background-color: var(--color-primary-blue);
-  overflow: hidden;
+  padding: 0 0 var(--space-4xl);
+  /* Remove top padding to merge with features section */
+  background-color: #2600ff;
+  /* Same deep blue as Features section for seamless look */
+  color: var(--color-white);
 }
 
-.download-app__content {
+.download-app__container {
+  background-color: #537BF8;
+  /* Lighter blue card container */
+  border-radius: 40px;
+  padding: 2rem;
+  /* Reduced padding */
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-3xl);
-  align-items: center;
-}
-
-.download-app__text h2 {
-  font-size: var(--font-size-5xl);
-  line-height: 1.2;
-  font-weight: var(--font-bold);
-  margin-bottom: var(--space-md);
-}
-
-.download-app__text p {
-  font-size: var(--font-size-lg);
-  opacity: 0.95;
-  margin-bottom: var(--space-xl);
-}
-
-.download-app__buttons {
-  display: flex;
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-md);
-  flex-wrap: wrap;
+  align-items: stretch;
 }
 
-.download-app__button {
-  display: inline-block;
-  transition: all var(--transition-base);
+/* Common Card Styles */
+.app-card {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  min-height: 320px;
+  /* Reduced height */
+  transition: transform var(--transition-base);
 }
 
-.download-app__button:hover {
-  transform: translateY(-2px);
+.app-card:hover {
+  transform: translateY(-5px);
 }
 
-.download-app__button img {
-  height: 48px;
-  width: auto;
+/* Card 1: Happy Customer */
+.app-card--image {
+  background-color: #000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.download-app__image {
-  display: block;
+.app-card--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Card 2: Download CTA (Yellow) */
+.app-card--cta {
+  background-color: #FFC107;
+  /* Vibrant Yellow */
+  padding: var(--space-lg);
+  /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app-card__header h3 {
+  font-size: 1.5rem;
+  /* Slightly smaller font */
+  font-weight: var(--font-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+.app-card__header p {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.4;
+}
+
+.app-card__btn {
+  background-color: #2600FF;
+  /* Blue button */
+  color: white;
+  padding: 0.8rem;
+  border-radius: 12px;
   text-align: center;
+  font-weight: var(--font-bold);
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin-top: auto;
 }
 
-.download-app__image img {
-  max-width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: contain;
+/* Card 3: Security/Tech */
+.app-card--tech {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Mobile Layout */
-@media (max-width: 1023px) {
-  .download-app__content {
-    grid-template-columns: 1fr;
-    gap: var(--space-xl);
-    text-align: center;
-  }
+.app-card--tech img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  .download-app__text h2 {
-    font-size: var(--font-size-4xl);
-  }
+/* Card 4: Dashboard Preview */
+.app-card--dashboard {
+  background-color: #000;
+  color: white;
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+}
 
-  .download-app__buttons {
-    justify-content: center;
+.app-card__dashboard-list {
+  list-style: none;
+  margin-top: var(--space-md);
+  padding: 0;
+}
+
+.app-card__dashboard-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 6px 0;
+  /* Tighter list */
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.app-card__dashboard-item.active {
+  background-color: #FFC107;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin: 4px 0;
+  font-weight: var(--font-bold);
+}
+
+/* Mobile Layouts */
+@media (max-width: 1200px) {
+  .download-app__container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 767px) {
   .download-app {
-    padding: var(--space-2xl) 0;
+    padding: 0 0 var(--space-3xl);
   }
 
-  .download-app__text h2 {
-    font-size: var(--font-size-3xl);
+  .download-app__container {
+    grid-template-columns: 1fr;
+    padding: var(--space-lg);
+    border-radius: 20px;
   }
 
-  .download-app__text p {
-    font-size: var(--font-size-base);
+  .app-card {
+    min-height: 300px;
   }
 
-  .download-app__buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .download-app__button img {
-    height: 40px;
+  .app-card__header h3 {
+    font-size: 1.5rem;
   }
 }
