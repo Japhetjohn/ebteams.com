@@ -66,7 +66,7 @@
 .newsletter-input {
   width: 100%;
   padding: 14px 20px;
-  background-color: #F9F9F9;
+  background-color: #FFFFFF;
   border: 1px solid #EAEAEA;
   border-radius: 12px;
   font-size: 0.875rem;
@@ -101,28 +101,34 @@
 /* Social Icons */
 .footer__social-links {
   display: flex;
-  gap: 12px;
-  margin-top: 20px;
+  gap: 16px;
+  margin-top: 24px;
 }
 
 .footer__social-icon {
-  width: 36px;
-  height: 36px;
-  background-color: #F3F6FF;
+  width: 44px;
+  height: 44px;
+  background-color: #E8EEFF;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .footer__social-icon:hover {
-  background-color: #E0E7FF;
+  background-color: #4F46E5;
+  transform: translateY(-2px);
+}
+
+.footer__social-icon:hover img {
+  filter: brightness(0) invert(1);
 }
 
 .footer__social-icon img {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
+  transition: filter 0.2s ease;
 }
 
 /* Disclaimer Section */
